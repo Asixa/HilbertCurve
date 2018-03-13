@@ -5,10 +5,9 @@ using SharpDX.DirectInput;
 
 public class Program : DxWindow
 {
-    [STAThread]
-    private static void Main() => new Program().Run(new DxConfiguration("希尔伯特曲线", 512, 512));
+    [STAThread]private static void Main() => new Program().Run(new DxConfiguration("希尔伯特曲线", 512, 512));
 
-    public int order = 1;
+    public int order;
     private Node top;
     public static List<Vector2> points = new List<Vector2>(), _points = new List<Vector2>();
     public bool lerping;
